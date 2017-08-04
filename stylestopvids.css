@@ -1,0 +1,372 @@
+div.svg-container {
+  /* float: right; */
+}
+/*
+.hidden {
+  display: none;
+}*/
+
+.tooltip-image-box {
+  left: 30px;
+  top: 30px;
+}
+
+.axis-x {
+  font: roboto;
+}
+
+.axis-y {
+  font: roboto;
+}
+
+svg {
+  cursor: pointer;
+}
+
+line.line-grid {
+  stroke: #CCCCCC;
+  stroke-dasharray: 4, 8;
+  opacity: 0.2;
+}
+
+.chart-title-container {
+  margin-top: 40px;
+  position: relative;
+}
+
+div.chart-title-top{
+  font-size: 36pt;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #cc181e;
+}
+
+div.chart-title-bottom{
+  font-size: 18pt;
+  margin-bottom: 14px;
+}
+svg {
+  overflow: visible;
+}
+
+path{
+  fill: none;
+}
+body {
+  font-family: roboto;
+  /*background: rgba(255, 240, 243, 0.14);*/
+  background: white;
+}
+
+image {
+  width: 400px;
+  height: 221.91px;
+  x: 20;
+  y: 60;
+}
+
+
+.container-all {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+.chart-title-text {
+    font-size: 24pt;
+    /*max-width: 50vw;*/
+    width: 70%;
+    position: relative;
+    /* float: left; */
+    margin-left: 30px;
+    font-weight: lighter;
+}
+
+.line-annotation-text {
+  font-size: 14pt;
+}
+
+img.title-image {
+  width: 100px;
+  /* float: right; */
+  width: 8%;
+  right: 8px;
+  top: -10px;
+  /* margin-left: 20px; */
+  position: absolute;
+  /* margin-right: 50px; */
+}
+
+div.all-container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+/*
+div.songs-container {
+  float: left;
+  max-width: 238px;
+  max-height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-top: 14px;
+}*/
+
+.songs-name-container {
+    margin-top: 20px;
+    -moz-column-width: 150px;
+    -webkit-column-width: 150px;
+    column-width: 200px;
+}
+
+.song {
+  display:inline-block;
+}
+.list-section-title {
+    /* margin: 0 auto; */
+    max-width: 1120px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+/*
+.container-all{
+  position:relative;
+}*/
+
+.svg-container{
+  position: relative;
+}
+
+.tooltip-container {
+  position:absolute;
+  box-shadow: 1pt 1pt 1pt 2pt rgba(0,0,0,0.3);
+  -moz-box-shadow:1pt 1pt 1pt 2pt rgba(0,0,0,0.3);
+  -webkit-box-shadow:1pt 1pt 1pt 2pt rgba(0,0,0,0.3);
+  opacity: 1;
+  background: white;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+
+.tooltip-image-box{
+  padding: 1rem;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.tooltip-text-container{
+  -webkit-box-flex: 1;
+   -ms-flex-positive: 1;
+   flex-grow: 1;
+   padding: 0.5em;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+
+}
+
+.tooltip-text-container p {
+  margin: 0.25em;
+  padding: 5px;
+  width: 100%;
+}
+
+.axis-y path {
+  stroke-opacity: 0;
+}
+
+.axis-x text {
+  font-size: 12px;
+  /*font-weight: bold;*/
+}
+
+
+.tooltip-title-text-box{
+  font-weight: bold;
+  font-size: 16px;
+}
+.tooltip-text-container-inner{
+   /*display: table;
+   table-layout: fixed;*/
+   /* flex-direction: column; */
+   /* justify-content: space-between; */
+}
+
+.annotation {
+  /*display: table-row;
+  vertical-align: middle;*/
+  color: black;
+}
+
+img.tooltip-image {
+  width: 200px;
+  display: block;
+}
+
+.bil-label{
+  font-weight: bold;
+  font-size: 10pt
+}
+
+
+.bil-label-record{
+  font-size: 12pt
+}
+
+div.song{
+  max-width: 190px;
+  font-size: 14px;
+  margin-top: 2px;
+  max-height: 14px;
+  cursor: pointer;
+  /* overflow: hidden; */
+  /* border-bottom:0.5px solid black; */
+  display: inline-block;
+}
+
+
+
+@media only screen and (max-device-width: 1450px) {
+
+  .chart-title-text {
+      font-size: 36pt;
+      width: 70%;
+  }
+
+  div.song{
+    max-width: 190px;
+    font-size: 12px;
+    margin-top: 2px;
+     max-height: 13px;
+    cursor: pointer;
+    /* overflow: hidden; */
+    /* border-bottom:0.5px solid black; */
+    display: inline-block;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (max-device-width: 1080px)  {
+  /* For mobile phones: */
+
+  .chart-title-container {
+    margin-top: 30px;
+    /*position: relative;*/
+  }
+
+  div.tooltip-title-text-box{
+    font-size: 10pt;
+  }
+  .chart-title-text {
+      font-size: 16pt;
+      width: 70%;
+  }
+
+  .tooltip-container {
+    width: 180px;
+    font-size: 8pt;
+  }
+
+  .songs-name-container{
+    margin-top: -2px;
+    -moz-column-width: 130px;
+    -webkit-column-width: 130px;
+    column-width: 130px;
+  }
+
+  div.song{
+    font-size: 8pt;
+  }
+
+  div.list-section-title{
+    margin-top: 5px;
+    font-size: 9pt;
+    text-decoration: underline;
+  }
+
+  .bil-label{
+    font-size: 6pt;
+  }
+
+  .bil-label-record{
+    font-size: 7pt;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-device-width: 355px) and (max-device-width: 400px) {
+    /* For mobile phones: */
+    .axis-x text {
+      font-size: 10px;
+      /*font-weight: bold;*/
+    }
+
+    .chart-title-container {
+      margin-top: 20px;
+      /*position: relative;*/
+    }
+
+    img.title-image {
+      /*width: 100px;*/
+      /* float: right; */
+      width: 8%;
+      right: 48px;
+      top: 0;
+      bottom: 10px;
+      /* margin-left: 20px; */
+      position: absolute;
+      /* margin-right: 50px; */
+    }
+
+    div.tooltip-title-text-box{
+      font-size: 10pt;
+      /*width: 50%;*/
+    }
+    .chart-title-text {
+        font-size: 16pt;
+        width: 70%;
+    }
+
+    .tooltip-container {
+      width: 180px;
+      font-size: 8pt;
+    }
+
+    .songs-name-container{
+      margin-top: -2px;
+      -moz-column-width: 130px;
+      -webkit-column-width: 130px;
+      column-width: 130px;
+    }
+
+    div.song{
+      font-size: 8pt;
+    }
+
+    div.list-section-title{
+      margin-top: 5px;
+      font-size: 9pt;
+      text-decoration: underline;
+    }
+
+    .bil-label{
+      font-size: 6pt;
+    }
+
+    .bil-label-record{
+      font-size: 7pt;
+      font-weight: bold;
+    }
+
+
+
+}
